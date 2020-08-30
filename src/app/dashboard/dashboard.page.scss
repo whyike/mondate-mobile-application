@@ -1,0 +1,52 @@
+*, *:after, *:before { margin:0; padding:0; }
+
+.node {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size:19px;
+  display:inline-block;
+  position:relative;
+  transition: all 1000ms ease;
+  color:#fff;
+}
+.node i {text-align:center; position:absolute;
+  top:50%; left:50%; transform:translate(-50%, -50%);}
+
+.activated {
+  box-shadow: 0px 0px 3px 2px rgba(194, 255, 194, 0.8);
+}
+
+.divider {
+  height: 50px;
+  width: 4px;
+  margin-right: 18px;
+  transition: all 800ms ease;
+}
+
+li p {
+  display:inline-block;
+  margin-left: 25px;
+}
+
+li {
+  list-style: none;
+  line-height: 1px;
+}
+
+
+.blue { background-color: rgba(82, 165, 255, 1); }
+.green{ background-color: rgba(92, 184, 92, 1) }
+.red { background-color: rgba(255, 148, 148, 1); }
+.grey { background-color: rgba(201, 201, 201, 1); }
+.orange { background-color: rgba(244, 179, 80, 1); }
+.black { background-color: rgba(1, 1, 1, 1); }
+
+
+ion-content {
+  --background: none;
+  background-image: url('/assets/bg/light.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,21 @@
+<div class="center-space flex">
+  <div class="mainImage">
+    <div></div>
+    <div class="iconImage"></div>
+  </div>
+  <ion-row class="verify">
+    <ion-input name="a" #a type="text" inputmode="numeric" autocomplete="off" maxlength="1" size="1"
+               (keyup)="moveFocus($event,b,false)" placeholder="*" [(ngModel)]="pinCode[0]"></ion-input>
+    <ion-input name="b" #b type="text" inputmode="numeric" autocomplete="off" maxlength="1"
+               (keyup)="moveFocus($event,c,a)" placeholder="*" [(ngModel)]="pinCode[1]"></ion-input>
+    <ion-input name="c" #c type="text" inputmode="numeric" autocomplete="off" maxlength="1"
+               (keyup)="moveFocus($event,d,b)" placeholder="*" [(ngModel)]="pinCode[2]"></ion-input>
+    <ion-input name="d" #d type="text" inputmode="numeric" autocomplete="off" maxlength="1"
+               (keyup)="moveFocus($event,e,c)" placeholder="*" [(ngModel)]="pinCode[3]"></ion-input>
+    <ion-input name="e" #e type="text" inputmode="numeric" autocomplete="off" maxlength="1"
+               (keyup)="moveFocus($event,f,d)" placeholder="*" [(ngModel)]="pinCode[4]"></ion-input>
+    <ion-input name="f" #f type="text" inputmode="numeric" autocomplete="off" maxlength="1"
+               (keyup)="moveFocus($event,false,e)" placeholder="*" [(ngModel)]="pinCode[5]"></ion-input>
+  </ion-row>
+  <ion-button expand="full" (click)="verifyOTP()" color="success">Next</ion-button>
+</div>

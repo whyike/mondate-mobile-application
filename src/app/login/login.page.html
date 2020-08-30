@@ -1,0 +1,22 @@
+<div *ngIf="allLoaded === true" class="center-space flex">
+    <div class="mainImage center">
+        <div>
+        </div>
+        <h1></h1>
+    </div>
+
+
+    <ion-item class="center-space">
+        <ion-icon name="call"></ion-icon>
+        <ion-select [selectedText]="countrySelected.dial_code" (ionChange)="countryCodeSelected($event)" [disabled]="true">
+            <!-- Searchbar with cancel button always shown -->
+            <ion-select-option *ngFor="let country of countriesCode" [value]="country"
+                               (select)="country.name === 'ישראל'">{{country.name}}
+            </ion-select-option>
+        </ion-select>
+        <ion-input align="center" [placeholder]="'Phone Number'" type="tel" minlength="9"
+                   maxlength="10"
+                   [(ngModel)]="phoneNumber"></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="sendOTP()" color="success">Next</ion-button>
+</div>

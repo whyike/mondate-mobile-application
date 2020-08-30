@@ -1,0 +1,7 @@
+{
+  "name": "efficiency-mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

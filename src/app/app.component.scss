@@ -1,0 +1,66 @@
+.title {
+  --background: transparent;
+  --color: #333333;
+  color: #333333;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.mainWrapper {
+  background: white;
+  color: #333333;
+  font-weight: bold;
+}
+
+ion-row, ion-col {
+  display: flex;
+}
+
+ion-router-outlet {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+ion-col {
+  flex-direction: column;
+}
+
+.center-space {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+
+.ion-color-main {
+  --ion-color-base: var(--ion-color-main);
+  --ion-color-base-rgb: var(--ion-color-main-rgb);
+  --ion-color-contrast: var(--ion-color-main-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-main-contrast-rgb);
+  --ion-color-shade: var(--ion-color-main-shade);
+  --ion-color-tint: var(--ion-color-main-tint);
+
+  &:hover {
+    background: lighten(gray, 5%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

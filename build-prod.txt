@@ -1,0 +1,4 @@
+ionic cordova build android --prod --release
+C:\Java\bin\keytool -genkey -v -keystore mondate.keystore -alias mondate -keyalg RSA -keysize 2048 -validity 10000
+C:\Java\bin\jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore mondate.keystore app-release-unsigned.apk mondate
+C:\Users\Elkabetz\AppData\Local\Android\Sdk\build-tools\29.0.3\zipalign.exe -v 4 app-release-unsigned.apk mondate.apk

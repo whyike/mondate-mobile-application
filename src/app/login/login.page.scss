@@ -1,0 +1,52 @@
+.mainImage {
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  height: 35%;
+
+  img {
+    z-index: 1;
+  }
+
+  div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &:after {
+      content: " ";
+      background: url('../../assets/bg/bg.jpg') no-repeat;
+      width: 100%;
+      height: 35%;
+      position: absolute;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      .invert { filter: invert(100%); }
+      clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+    }
+  }
+}
+
+ion-button {
+  width: 100%;
+  height: 60px;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.center-space {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
